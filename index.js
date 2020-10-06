@@ -171,23 +171,23 @@ function game(userChoice){
     }
     let handOne=compChoice();
     if (handOne==="Scissors"&&userChoice==="Scissors"){
-      return "Draw";
+      return "it's a tie";
     } else if (handOne==="Scissors"&&userChoice==="Paper") {
-      return "Lost";
+      return "you lose!";
     } else if (handOne==="Scissors"&&userChoice==="Rock") {
-      return "Win";
+      return "you win!";
     } else if (handOne==="Rock"&&userChoice==="Scissors") {
-      return "Lost";
+      return "you lose!";
     } else if (handOne==="Rock"&&userChoice==="Paper") {
-      return "Win";
+      return "you win!";
     } else if (handOne==="Rock"&&userChoice==="Rock") {
-      return "Draw";
+      return "you lose!";
     } else if (handOne==="Paper"&&userChoice==="Scissors") {
-      return "Win";
+      return "you win!";
     } else if (handOne==="Paper"&&userChoice==="Paper") {
-      return "Draw";
+      return "it's a tie";
     } else if (handOne==="Paper"&&userChoice==="Rock") {
-      return "Lost";
+      return "you lose!";
     }
 }
 
@@ -224,8 +224,6 @@ function feet(cmCount){
     let feetCount=(cmCount/30.48);
     return feetCount;
   }
- /*Ahmed Serag - this is actually wrong but the only way to get it to say right. This divides the total amount of feet by the amount of centimeters in a foot instead of multiplying, which is what would truly give you the total centimeters.*/
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
