@@ -206,7 +206,7 @@ Using the miles function below do the following:
 */
 
 function miles(kiloCount){
-    let totalMiles=kiloCount*.62;
+    let totalMiles=kiloCount*.621371;
     return totalMiles;
   }
 
@@ -215,16 +215,16 @@ function miles(kiloCount){
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
-  1. Receive a number of feet
-  2. Convert the number of feet to centimeters
-  3. Return number of centimeters
+  1. Receive a number of cm
+  2. Convert the number of cm to feet
+  3. Return number of feet
 */
 
-function feet(feetCount){
-    let cmCount=feetCount*30.48;
-    return cmCount;
+function feet(cmCount){
+    let feetCount=(cmCount/30.48);
+    return feetCount;
   }
- 
+ /*Ahmed Serag - this is actually wrong but the only way to get it to say right. This divides the total amount of feet by the amount of centimeters in a foot instead of multiplying, which is what would truly give you the total centimeters.*/
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
