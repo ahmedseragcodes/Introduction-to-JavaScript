@@ -162,32 +162,32 @@ function game(userChoice){
   function compChoice(){
     let compHand=Math.random();
     if (compHand>=0&&compHand<=.33){
-      return "Scissors";
+      return "scissors";
     } else if (compHand>=.34&&compHand<=.66){
-      return "Rock";
-    } else if (compHand>=.66&&compHand<=1){
-      return "Paper";
+      return "rock";
+    } else if (compHand>=.67&&compHand<=1){
+      return "paper";
     }
     }
     let handOne=compChoice();
-    if (handOne==="Scissors"&&userChoice==="Scissors"){
+    if (userChoice==="scissors"&&handOne==="scissors"){
       return "it's a tie";
-    } else if (handOne==="Scissors"&&userChoice==="Paper") {
-      return "you lose!";
-    } else if (handOne==="Scissors"&&userChoice==="Rock") {
+    } else if (userChoice==="scissors"&&handOne==="paper") {
       return "you win!";
-    } else if (handOne==="Rock"&&userChoice==="Scissors") {
+    } else if (userChoice==="scissors"&&handOne==="rock") {
       return "you lose!";
-    } else if (handOne==="Rock"&&userChoice==="Paper") {
+    } else if (userChoice==="rock"&&handOne==="scissors") {
       return "you win!";
-    } else if (handOne==="Rock"&&userChoice==="Rock") {
+    } else if (userChoice==="rock"&&handOne==="paper") {
       return "you lose!";
-    } else if (handOne==="Paper"&&userChoice==="Scissors") {
-      return "you win!";
-    } else if (handOne==="Paper"&&userChoice==="Paper") {
+    } else if (userChoice==="rock"&&handOne==="rock") {
       return "it's a tie";
-    } else if (handOne==="Paper"&&userChoice==="Rock") {
+    } else if (userChoice==="paper"&&handOne==="scissors") {
       return "you lose!";
+    } else if (userChoice==="paper"&&handOne==="paper") {
+      return "it's a tie";
+    } else if (userChoice==="paper"&&handOne==="rock") {
+      return "you win!";
     }
 }
 
