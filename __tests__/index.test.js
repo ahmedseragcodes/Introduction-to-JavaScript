@@ -25,7 +25,7 @@ describe('hungryDogFunction', ()=>{
 });
 describe('gameFunction', ()=>{
     it('return win, lose or tie', ()=>{
-        expect(functions.game('rock', 'sissors')).toBe('you win!');
+        expect(functions.game('rock', 'scissors')).toBe('you win!');
     })
     it('return win, lose or tie', ()=>{
         expect(functions.game('rock', 'paper')).toBe('you lose!');
@@ -55,5 +55,3 @@ describe('gradeFunction', ()=>{
         expect(functions.grade(85)).toBe('you got a B');
     })
 });
-
-
